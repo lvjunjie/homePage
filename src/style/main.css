@@ -1,0 +1,68 @@
+/*全局样式*/
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+body{
+  background-attachment: fixed;
+  /*background-color: rgba(0,0,0,0.3);*/
+  /*background-image: url("../assets/img/bg.jpg");*/
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-size: cover;
+  overflow: hidden;
+
+
+
+}
+
+
+.wrapper-space {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform:translateY(-50%);
+  padding:0 50px;
+
+  transition: all 0.5s ease-out;
+
+}
+
+.wrapper {
+  /*width: 4000px;*/
+  height: 500px;
+  /*background: yellow;*/
+  box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
+  min-height: 25rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .wrapper-space {
+    position: relative;
+    transition: all 0.5s ease-out;
+    transform:translate(0,0);
+    padding: 0;
+  }
+
+  .wrapper {
+    height: 300px;
+    min-height: 20rem;
+    display: block;
+  }
+}
